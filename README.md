@@ -1,11 +1,11 @@
 # dotNet6EFCoreAngularSpaDemo
-A demo project for leveraging **.Net 6** + **EF core** + **Angular SPA** with access to sql db in **visual studio 2022**
+A demo project for leveraging **.Net 6** + **EF core** + **Angular(13) SPA** with access to sql db in **visual studio 2022**
 
 # prerequisite
 - Visual studio 2022
 - node.js 16.x.x
  - npm 8.1.0
-- after opening .sln file, you need to add
+> after opening .sln file, you need to add
 ```json
 {
   "AzureSqlServer": {
@@ -13,4 +13,4 @@ A demo project for leveraging **.Net 6** + **EF core** + **Angular SPA** with ac
   }
 }
 ```
-via visual studio 'Manage User Secrets'
+> via visual studio **'Manage User Secrets'**
