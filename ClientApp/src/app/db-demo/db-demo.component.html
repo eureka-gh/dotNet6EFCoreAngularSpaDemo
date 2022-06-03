@@ -1,0 +1,32 @@
+<h1>Database Demo</h1>
+
+<p>This is a simple example of an Angular component calling rest api to get data from backend that's connecting to a sql db(hosted in Azure).</p>
+
+<p aria-live="polite">Current count: <strong>{{ currentCount }}</strong></p>
+
+<button class="btn btn-primary" (click)="incrementCounter()">Increment</button>
+
+<br />
+<p *ngIf="!allStudents"><em>Loading...</em></p>
+<br />
+<hr />
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="allStudents">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Last Name</th>
+      <th>First Name</th>
+      <th>Enrollment Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let stu of allStudents">
+      <td>{{ stu.id }}</td>
+      <td>{{ stu.lastName }}</td>
+      <td>{{ stu.firstMidName }}</td>
+      <td>{{ stu.enrollmentDate }}</td>
+    </tr>
+  </tbody>
+</table>
+
