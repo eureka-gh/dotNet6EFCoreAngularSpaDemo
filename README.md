@@ -2,9 +2,9 @@
 A demo project for leveraging **.Net 6** + **EF core** + **Angular(13) SPA** with access to sql db in **visual studio 2022**
 
 # prerequisite
-- Visual studio 2022
-- node.js 16.x.x
- - npm 8.1.0
+- Visual Studio 2022
+   * node.js 16.x.x (this may comes with vs2022, better to check the version)
+   * npm 8.1.0
 > after opening .sln file, you need to add
 ```json
 {
