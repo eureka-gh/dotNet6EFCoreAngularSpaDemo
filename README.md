@@ -15,7 +15,7 @@ A demo project for leveraging **.Net 6** + **EF core** + **Angular(13) SPA** wit
 ```
 > via visual studio **'Manage User Secrets'**
 
-Note the launchSettings.json in vs solution's Properties folder
+Note the launchSettings.json in vs2022 solution's Properties folder
 ```json
 {
   "profiles": {
