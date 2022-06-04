@@ -39,3 +39,5 @@ Note the launchSettings.json in vs solution's Properties folder
   }
 }
 ```
+
+The API service using the Azure Application Insight for logging, please check your Azure WebApp's APPLICATIONINSIGHTS_CONNECTION_STRING once it's been deployed to Azure WebApp resource.
