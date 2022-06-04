@@ -14,3 +14,28 @@ A demo project for leveraging **.Net 6** + **EF core** + **Angular(13) SPA** wit
 }
 ```
 > via visual studio **'Manage User Secrets'**
+
+Note the launchSettings.json in vs solution's Properties folder
+```json
+{
+  "profiles": {
+    "DotNet6AngularSPApp_Run_Local": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7096;http://localhost:5096", // the port value here can be arbitary
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "LocalDevelopment",
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy" // this is needed if run from local vs2022
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "LocalDevelopment",
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy" // this is needed if run from local vs2022 
+      }
+    }
+  }
+}
+```
