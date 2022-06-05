@@ -32,8 +32,7 @@ Note the launchSettings.json in vs2022 solution's Properties folder
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "LocalDevelopment",
-        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy" // this is needed if run from local vs2022 
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
   }
