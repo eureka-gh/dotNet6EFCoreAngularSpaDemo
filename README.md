@@ -27,15 +27,7 @@ Note the launchSettings.json in vs2022 solution's Properties folder
         "ASPNETCORE_ENVIRONMENT": "LocalDevelopment",
         "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy" // this is needed if run from local vs2022
       }
-    },
-    "IIS Express": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
     }
-  }
 }
 ```
 > The profiles/**DotNet6AngularSPApp_Run_Local** is the one you should lauch for local debugging from vs2022, not IIS Express anymore as normal asp.net api project.
