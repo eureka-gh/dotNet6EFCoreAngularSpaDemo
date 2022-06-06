@@ -60,8 +60,6 @@ namespace DataExplorerAPIService.Core
             app.UseRouting();
             
             app.MapControllers();
-            
-            app.MapFallbackToFile("index.html"); ;
         }
     }
 }

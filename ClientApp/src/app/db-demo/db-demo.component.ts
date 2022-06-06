@@ -1,6 +1,8 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { ApiClientV1, IStudentDto } from '../app.api.service.client';
+import { InformationBoxService } from '../core/services/information-box.service';
+import { LoadingScreenService } from '../core/services/loading-screen.service';
 
 @Component({
   selector: 'app-db-demo-component',
@@ -11,18 +13,23 @@ export class DbDemoComponent {
   public allStudents: IStudentDto[] = [];
 
   constructor(
-    private readonly apiClient: ApiClientV1
+    private readonly apiClient: ApiClientV1,
+    private readonly loadingScreenService: LoadingScreenService,
+    private readonly informationBoxService: InformationBoxService
   ) {}
 
   async ngOnInit() {
     try {
-      this.allStudents = (await this.apiClient.getAllStudents()) as IStudentDto[];
-      console.log(`get # of students: ${this.allStudents.length}.`);
+      this.loadingScreenService.setLoading(true);
 
-      //var resp = (await this.apiClient.getStudent(9)) as IStudentDto;
-      //console.log(`get student: ${resp}.`);
+      this.allStudents = await this.apiClient.getAllStudents() as IStudentDto[];
+      this.informationBoxService.show(`get # of students: ${this.allStudents.length}.`);
     } catch (err) {
-      console.error((err as HttpErrorResponse).message);
+      var errMsg = (err as HttpErrorResponse).message;
+      this.informationBoxService.show(errMsg, "alert-danger");
+      console.error(errMsg);
+    } finally {
+      this.loadingScreenService.setLoading(false);
     }
   }
 

@@ -3,26 +3,26 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:21827",
-      "sslPort": 44431 // this value needs to match the '--port value' set in ClientApp/package.json/scripts/start:{windows|default}
+      "applicationUrl": "http://localhost:49814/",
+      "sslPort": 44358
     }
   },
   "profiles": {
     "DotNet6AngularSPApp_Run_Local": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7096;http://localhost:5096", // the port value here can be arbitary
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "LocalDevelopment",
-        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy" // this is needed if run from local vs 
-      }
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy"
+      },
+      "applicationUrl": "https://localhost:7096;http://localhost:5096"
     },
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "LocalDevelopment",
-        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy" // this is needed if run from local vs 
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy"
       }
     }
   }
