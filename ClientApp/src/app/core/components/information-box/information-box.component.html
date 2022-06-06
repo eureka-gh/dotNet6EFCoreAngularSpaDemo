@@ -1,0 +1,9 @@
+<div class="container alert" [ngClass]="informationBoxService.alertClass" role="alert" *ngIf="visible">
+    <button type="button" class="close" (click)="informationBoxService.hide()">
+        <span>&times;</span>
+    </button>
+    <div>
+        <i class="fa fa-info-circle"></i>
+        <span class="message"> {{ informationBoxService.message }}</span>
+    </div>
+</div>

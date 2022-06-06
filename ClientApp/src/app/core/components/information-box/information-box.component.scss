@@ -1,0 +1,10 @@
+:host {
+    position: fixed;
+    bottom: 37px; // offset ags-footer
+    width: 100%;
+    z-index: 9001;
+
+    .alert {
+        margin-bottom: 0;
+    }
+}
