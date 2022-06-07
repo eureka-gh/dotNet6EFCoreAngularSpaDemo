@@ -1,6 +1,5 @@
 <div class="container alert" [ngClass]="informationBoxService.alertClass" role="alert" *ngIf="visible">
-    <button type="button" class="close" (click)="informationBoxService.hide()">
-        <span>&times;</span>
+    <button type="button" class="btn-close float-end" (click)="informationBoxService.hide()">
     </button>
     <div>
         <i class="fa fa-info-circle"></i>
