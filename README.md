@@ -42,5 +42,5 @@ You need to add your local IP range in a azure-sql-server/security/networking/Fi
 ![image](https://user-images.githubusercontent.com/5110396/172288410-37989b98-bd0b-487f-8dea-b08c90331cf9.png)
 > Note, once the app is deployed to public azure, please tick the **Allow Azure services and resources to access this server**, so that you don't need to add IP filtering mannually.
 
-# Deployment (2 Azure WebApp)
+# Deployment (to Azure WebApp)
 The API service using the Azure Application Insight for logging, please check your Azure WebApp's APPLICATIONINSIGHTS_CONNECTION_STRING once it's been deployed to Azure WebApp resource.
