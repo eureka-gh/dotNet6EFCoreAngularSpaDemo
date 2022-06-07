@@ -33,7 +33,7 @@ Note the launchSettings.json in vs2022 solution's Properties folder
 > The profiles/**DotNet6AngularSPApp_Run_Local** is the one you should lauch for local debugging from vs2022, not IIS Express anymore as normal asp.net api project.
 ![image](https://user-images.githubusercontent.com/5110396/172029299-9c9226e1-4152-461d-a130-3ce307b1802c.png)
 
-# Local Test
+# Local Test issue
 In local test, you may see error:
 ![image](https://user-images.githubusercontent.com/5110396/172286946-279b9c36-572c-42b8-9ef8-7ae8769c652a.png)
 Please check if you see backend message like
