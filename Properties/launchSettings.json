@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "DotNet6AngularSPApp_Run_Local": {
+    "DotNet6AngularSPApp_Local": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
